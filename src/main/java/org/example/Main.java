@@ -1,19 +1,29 @@
 package org.example;
 
 public class Main {
+
     public static void main(String[] args) {
+        // para usar una clase, cree un objeto.
+        // tipo de dato= variable. es poder acceder a sus atribulos y metodos.
+        Empleado objeto = new Empleado();
 
-        //EN EL MAIN LLAMO A MIS CLASES
-        //EN EL MAIN CREO LOS OBJETOS DE MIS CLASES
-        //EN EL MAIN CREO UNA INSTANCIA DE MI CLASE
-        //EN EL MAIN LE SACO COPIA A MIS CLASES Y CREO OBJETOS
-        Invitado objetoDeClaseInvitado=new Invitado();
-        Invitado objeto2=new Invitado(333,true,"Juan",10000);
+        // utilizar el objeto para acceder a un atributo.
+        objeto.nombre = "girasol";
 
+        // utlizar el objeto para acceder al metodo.
+        // llamando, las llaves se ponen en las clase.
+        String resultado = objeto.saludar("linda");
+        // punto 2.
+        int sumartoria = objeto.sumar(5, 3);
 
-        //obtener el valor de los atributos
-        System.out.println(objetoDeClaseInvitado.nombre);
-        System.out.println(objeto2.nombre);
+        // salidas por consola.
+        // acceder a mostrar el valor de un atributo.
+        System.out.println(objeto.nombre);
+
+        // acceder a mostrar el valor de un metodo.
+        System.out.println(objeto.saludar("linde, mira ese chocorramito que destape y ese caramelito cual es."));
+        System.out.println(resultado);
+        System.out.println(sumartoria);
 
     }
 }
